@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VisorImagenes"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="Visor de imágenes" MinHeight="600" Height="600" Width="700" MinWidth="700" Icon="assets/128.ico">
+    <DockPanel>
+        <StackPanel Background="LightBlue" Margin="8" Height="60" DockPanel.Dock="Bottom">
+            <DockPanel Margin="5" Height="55">
+                <TextBlock VerticalAlignment="Center" DockPanel.Dock="Left" FontSize="20" FontFamily="Rubik">Nº de Imágenes: 10</TextBlock>
+                <TextBlock VerticalAlignment="Center" DockPanel.Dock="Right" FontSize="20" FontFamily="Rubik">Diseñado por Juandi Cabrera</TextBlock>
+                <TextBlock></TextBlock>
+            </DockPanel>
+        </StackPanel>
+        <TextBlock DockPanel.Dock="Top" HorizontalAlignment="Center" FontFamily="Rubik" FontSize="40">Visor de imágenes</TextBlock>
+
+        <TextBlock></TextBlock>
+
+
+
+
+
+    </DockPanel>
+
 </Window>
