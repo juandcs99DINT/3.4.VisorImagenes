@@ -8,21 +8,19 @@
         Title="Visor de imágenes" MinHeight="600" Height="600" Width="700" MinWidth="700" Icon="assets/128.ico">
     <DockPanel>
         <StackPanel Background="LightBlue" Margin="8" Height="60" DockPanel.Dock="Bottom">
-            <DockPanel Margin="5" Height="55">
+            <DockPanel Margin="5" Height="55" LastChildFill="False">
                 <TextBlock VerticalAlignment="Center" DockPanel.Dock="Left" FontSize="20" FontFamily="Rubik">Nº de Imágenes: 10</TextBlock>
                 <TextBlock VerticalAlignment="Center" DockPanel.Dock="Right" FontSize="20" FontFamily="Rubik">Diseñado por Juandi Cabrera</TextBlock>
-                <TextBlock></TextBlock>
             </DockPanel>
         </StackPanel>
 
         <Border DockPanel.Dock="Right" Margin="5" BorderThickness="2" CornerRadius="3" BorderBrush="Black" Width="120">
-            <DockPanel Background="LightGreen">
+            <DockPanel Background="LightGreen" LastChildFill="False">
                 <Button Margin="5" DockPanel.Dock="Top">Añadir imagen</Button>
                 <Button Margin="5" DockPanel.Dock="Top">Eliminar imagen</Button>
                 <Button Margin="5" DockPanel.Dock="Top">Eliminar todas</Button>
                 <Button Margin="5" DockPanel.Dock="Bottom">Recortar</Button>
                 <Button Margin="5" DockPanel.Dock="Bottom">Rotar</Button>
-                <TextBlock></TextBlock>
             </DockPanel>
         </Border>
         <TextBlock DockPanel.Dock="Top" HorizontalAlignment="Center" FontFamily="Rubik" FontSize="40">Visor de imágenes</TextBlock>
@@ -37,7 +35,7 @@
             <Image Width="135" Height="215" Source="assets/episodioIV.jpg"></Image>
             <Image Width="135" Height="215" Source="assets/episodioIV.jpg"></Image>
         </WrapPanel>
-        
+
     </DockPanel>
 
 </Window>
