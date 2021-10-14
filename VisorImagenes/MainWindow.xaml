@@ -37,13 +37,7 @@
             <Image Width="135" Height="215" Source="assets/episodioIV.jpg"></Image>
             <Image Width="135" Height="215" Source="assets/episodioIV.jpg"></Image>
         </WrapPanel>
-
         
-
-
-
-
-
     </DockPanel>
 
 </Window>
