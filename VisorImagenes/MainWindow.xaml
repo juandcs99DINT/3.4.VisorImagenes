@@ -12,30 +12,56 @@
             <Setter Property="Width" Value="135"></Setter>
             <Setter Property="Height" Value="215"></Setter>
         </Style>
-        <Style TargetType="{x:Type StackPanel}">
+        <Style TargetType="{x:Type DockPanel}" x:Key="InferiorDockPanel">
             <Setter Property="Background" Value="LightBlue"></Setter>
-            <Setter Property="Margin" Value="8"></Setter>
+            <Setter Property="Margin" Value="10"></Setter>
             <Setter Property="Height" Value="60"></Setter>
+            <Setter Property="LastChildFill" Value="False"></Setter>
+        </Style>
+        <Style TargetType="{x:Type DockPanel}" x:Key="DerechoDockPanel">
+            <Setter Property="Background" Value="LightGreen"></Setter>
+            <Setter Property="LastChildFill" Value="False"></Setter>
+        </Style>
+        <Style TargetType="{x:Type TextBlock}" x:Key="InferiorTextBlock">
+            <Setter Property="Margin" Value="5"></Setter>
+            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="FontSize" Value="20"></Setter>
+            <Setter Property="FontFamily" Value="Rubik"></Setter>
+        </Style>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Margin" Value="5"></Setter>
+        </Style>
+        <Style TargetType="{x:Type TextBlock}" x:Key="TituloTextBlock">
+            <Setter Property="FontSize" Value="40"></Setter>
+            <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+            <Setter Property="FontFamily" Value="Rubik"></Setter>
+            <Setter Property="Margin" Value="10"></Setter>
+        </Style>
+        <Style TargetType="{x:Type Border}" x:Key="BorderDerecho">
+            <Setter Property="Margin" Value="5"></Setter>
+            <Setter Property="BorderThickness" Value="2"></Setter>
+            <Setter Property="CornerRadius" Value="3"></Setter>
+            <Setter Property="BorderBrush" Value="Black"></Setter>
+            <Setter Property="Width" Value="120"></Setter>
         </Style>
     </Window.Resources>
+    
     <DockPanel>
-        <StackPanel DockPanel.Dock="Bottom">
-            <DockPanel Margin="5" Height="55" LastChildFill="False">
-                <TextBlock VerticalAlignment="Center" DockPanel.Dock="Left" FontSize="20" FontFamily="Rubik">Nº de Imágenes: 10</TextBlock>
-                <TextBlock VerticalAlignment="Center" DockPanel.Dock="Right" FontSize="20" FontFamily="Rubik">Diseñado por Juandi Cabrera</TextBlock>
-            </DockPanel>
-        </StackPanel>
+        <DockPanel DockPanel.Dock="Bottom" Style="{StaticResource InferiorDockPanel}">
+            <TextBlock DockPanel.Dock="Left" Style="{StaticResource InferiorTextBlock}">Nº de Imágenes: 10</TextBlock>
+            <TextBlock DockPanel.Dock="Right" Style="{StaticResource InferiorTextBlock}">Diseñado por Juandi Cabrera</TextBlock>
+        </DockPanel>
 
-        <Border DockPanel.Dock="Right" Margin="5" BorderThickness="2" CornerRadius="3" BorderBrush="Black" Width="120">
-            <DockPanel Background="LightGreen" LastChildFill="False">
-                <Button Margin="5" DockPanel.Dock="Top">Añadir imagen</Button>
-                <Button Margin="5" DockPanel.Dock="Top">Eliminar imagen</Button>
-                <Button Margin="5" DockPanel.Dock="Top">Eliminar todas</Button>
-                <Button Margin="5" DockPanel.Dock="Bottom">Recortar</Button>
-                <Button Margin="5" DockPanel.Dock="Bottom">Rotar</Button>
+        <Border DockPanel.Dock="Right" Style="{StaticResource BorderDerecho}">
+            <DockPanel Style="{StaticResource DerechoDockPanel}">
+                <Button DockPanel.Dock="Top">Añadir imagen</Button>
+                <Button DockPanel.Dock="Top">Eliminar imagen</Button>
+                <Button DockPanel.Dock="Top">Eliminar todas</Button>
+                <Button DockPanel.Dock="Bottom">Recortar</Button>
+                <Button DockPanel.Dock="Bottom">Rotar</Button>
             </DockPanel>
         </Border>
-        <TextBlock DockPanel.Dock="Top" HorizontalAlignment="Center" FontFamily="Rubik" FontSize="40">Visor de imágenes</TextBlock>
+        <TextBlock DockPanel.Dock="Top" Style="{StaticResource TituloTextBlock}">Visor de imágenes</TextBlock>
 
         <WrapPanel>
             <Image Source="assets/episodioIV.jpg"></Image>
