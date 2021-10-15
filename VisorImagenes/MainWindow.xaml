@@ -6,8 +6,20 @@
         xmlns:local="clr-namespace:VisorImagenes"
         mc:Ignorable="d"
         Title="Visor de imágenes" MinHeight="600" Height="600" Width="700" MinWidth="700" Icon="assets/128.ico">
+
+    <Window.Resources>
+        <Style TargetType="{x:Type Image}">
+            <Setter Property="Width" Value="135"></Setter>
+            <Setter Property="Height" Value="215"></Setter>
+        </Style>
+        <Style TargetType="{x:Type StackPanel}">
+            <Setter Property="Background" Value="LightBlue"></Setter>
+            <Setter Property="Margin" Value="8"></Setter>
+            <Setter Property="Height" Value="60"></Setter>
+        </Style>
+    </Window.Resources>
     <DockPanel>
-        <StackPanel Background="LightBlue" Margin="8" Height="60" DockPanel.Dock="Bottom">
+        <StackPanel DockPanel.Dock="Bottom">
             <DockPanel Margin="5" Height="55" LastChildFill="False">
                 <TextBlock VerticalAlignment="Center" DockPanel.Dock="Left" FontSize="20" FontFamily="Rubik">Nº de Imágenes: 10</TextBlock>
                 <TextBlock VerticalAlignment="Center" DockPanel.Dock="Right" FontSize="20" FontFamily="Rubik">Diseñado por Juandi Cabrera</TextBlock>
@@ -26,14 +38,14 @@
         <TextBlock DockPanel.Dock="Top" HorizontalAlignment="Center" FontFamily="Rubik" FontSize="40">Visor de imágenes</TextBlock>
 
         <WrapPanel>
-            <Image Width="135" Height="215" Source="assets/episodioIV.jpg"></Image>
-            <Image Width="135" Height="215" Source="assets/episodioIV.jpg"></Image>
-            <Image Width="135" Height="215" Source="assets/episodioIV.jpg"></Image>
-            <Image Width="135" Height="215" Source="assets/episodioIV.jpg"></Image>
-            <Image Width="135" Height="215" Source="assets/episodioIV.jpg"></Image>
-            <Image Width="135" Height="215" Source="assets/episodioIV.jpg"></Image>
-            <Image Width="135" Height="215" Source="assets/episodioIV.jpg"></Image>
-            <Image Width="135" Height="215" Source="assets/episodioIV.jpg"></Image>
+            <Image Source="assets/episodioIV.jpg"></Image>
+            <Image Source="assets/episodioIV.jpg"></Image>
+            <Image Source="assets/episodioIV.jpg"></Image>
+            <Image Source="assets/episodioIV.jpg"></Image>
+            <Image Source="assets/episodioIV.jpg"></Image>
+            <Image Source="assets/episodioIV.jpg"></Image>
+            <Image Source="assets/episodioIV.jpg"></Image>
+            <Image Source="assets/episodioIV.jpg"></Image>
         </WrapPanel>
 
     </DockPanel>
