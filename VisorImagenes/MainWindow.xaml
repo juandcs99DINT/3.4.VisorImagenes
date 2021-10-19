@@ -50,7 +50,7 @@
     <DockPanel>
         <DockPanel DockPanel.Dock="Bottom" Style="{StaticResource InferiorDockPanel}">
             <TextBlock DockPanel.Dock="Left" Style="{StaticResource InferiorTextBlock}">Nº de Imágenes: 10</TextBlock>
-            <TextBlock DockPanel.Dock="Right" Style="{StaticResource InferiorTextBlock}">Diseñado por Juandi Cabrera</TextBlock>
+            <TextBlock DockPanel.Dock="Right" Style="{StaticResource InferiorTextBlock}">Diseñado por Juandi Cabrera </TextBlock>
         </DockPanel>
 
         <Border DockPanel.Dock="Right" Style="{StaticResource BorderDerecho}">
